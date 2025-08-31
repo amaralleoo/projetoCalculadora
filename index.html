@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+         <input type="text" id="display" disabled>
+        <div class="operacoes">
+            <button onclick="limpar()" class="limpar">C</button>
+            <button onclick="adicionar('%')" class="operador">%</button>
+            <button onclick="raiz()" class="operador">√</button>
+            <button onclick="adicionar('/')" class="operador">÷</button>
+
+            <button onclick="adicionar('7')" class="numeros">7</button>
+            <button onclick="adicionar('8')" class="numeros">8</button>
+            <button onclick="adicionar('9')" class="numeros">9</button>
+            <button onclick="adicionar('*')" class="operador">×</button>
+
+            <button onclick="adicionar('4')" class="numeros">4</button>
+            <button onclick="adicionar('5')" class="numeros">5</button>
+            <button onclick="adicionar('6')" class="numeros">6</button>
+            <button onclick="adicionar('-')" class="operador">−</button>
+
+            <button onclick="adicionar('1')" class="numeros">1</button>
+            <button onclick="adicionar('2')" class="numeros">2</button>
+            <button onclick="adicionar('3')" class="numeros">3</button>
+            <button onclick="adicionar('+')" class="operador">+</button>
+
+            <button onclick="adicionar('0')" style="grid-column: span 2;" class="numeros">0</button>
+            <button onclick="adicionar('.')" class="numeros">.</button>
+            <button onclick="calcular()" class="igual">=</button>
+        </div>
+    </div>
+    <p class="frase">Leonardo Amaral Alves, 2025.</p>
+
+    <script src="index.js"></script>
+</body>
+</html>
